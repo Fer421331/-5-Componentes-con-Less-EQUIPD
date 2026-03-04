@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | Vite MPA + LESS</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar__inner">
+        <a class="navbar__brand" href="/">
+          <span class="logo">V</span>
+          <span>ViteMPA</span>
+        </a>
+        <nav class="navbar__links">
+          <a class="is-active" href="/">Inicio</a>
+          <a href="/about.html">About</a>
+          <a href="#cards">Servicios</a>
+          <a href="#half">Panel</a>
+        </nav>
+        <div class="navbar__actions">
+          <a class="btn btn--ghost" href="/about.html">Ver About</a>
+          <a class="btn" href="#cards">Explorar</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__copy">
+            <div class="badge">Vite + MPA + LESS</div>
+            <h1>Diseño moderno con 5 componentes en una sola página</h1>
+            <p>
+              Estructura limpia, responsive y lista para publicar en GitHub Pages.
+              Incluye navegación, panel hero, cards, panel dividido y footer completo.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn" href="#cards">Ver Cards</a>
+              <a class="btn btn--ghost" href="#half">Ir al Panel</a>
+            </div>
+
+            <div class="stats">
+              <div class="stat">
+                <div class="stat__num">5</div>
+                <div class="stat__label">Componentes</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">MPA</div>
+                <div class="stat__label">2 páginas</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">LESS</div>
+                <div class="stat__label">Estilos</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__panel" aria-hidden="true">
+            <div class="hero-card">
+              <div class="hero-card__top">
+                <div class="dot dot--red"></div>
+                <div class="dot dot--yellow"></div>
+                <div class="dot dot--green"></div>
+              </div>
+              <div class="hero-card__content">
+                <p class="mono">/src/styles/main.less</p>
+                <div class="code-line w80"></div>
+                <div class="code-line w55"></div>
+                <div class="code-line w70"></div>
+                <div class="code-line w45"></div>
+                <div class="code-line w90"></div>
+              </div>
+              <div class="hero-card__footer">
+                <span class="pill">Responsive</span>
+                <span class="pill">Accesible</span>
+                <span class="pill">UI limpia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="cards">
+        <div class="section__head">
+          <h2 class="section__title">Cards</h2>
+          <p class="section__subtitle">
+            Tres tarjetas mínimas (aquí van 3) con icono, descripción y acción.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Rendimiento</h3>
+            <p>
+              Vite carga rápido y ayuda a trabajar con una experiencia de desarrollo fluida.
+            </p>
+            <div class="card__meta">
+              <span class="tag">Vite</span>
+              <span class="tag">Dev Server</span>
+            </div>
+            <a class="card__link" href="#half">Ver panel →</a>
+          </article>
+
+          <article class="card">
+            <h3>Componentes</h3>
+            <p>
+              NavBar, Hero, Cards, Panel dividido y Footer: todo en un layout consistente.
+            </p>
+            <div class="card__meta">
+              <span class="tag">UI</span>
+              <span class="tag">Layout</span>
+            </div>
+            <a class="card__link" href="/about.html">Ir a About →</a>
+          </article>
+
+          <article class="card">
+            <h3>LESS</h3>
+            <p>
+              Variables, mixins y anidación para mantener estilos ordenados y escalables.
+            </p>
+            <div class="card__meta">
+              <span class="tag">Variables</span>
+              <span class="tag">Nesting</span>
+            </div>
+            <a class="card__link" href="#footer">Bajar al footer →</a>
+          </article>
+        </div>
+      </section>
+      <section class="half" id="half">
+        <div class="half__image" role="img" aria-label="Panel visual"></div>
+
+        <div class="half__text">
+          <div class="badge badge--soft">Half Inverted Panel</div>
+          <h2>Mitad texto, mitad imagen (invertido en desktop)</h2>
+          <p>
+            Este panel divide el contenido en dos columnas: visual e información.
+            En pantallas grandes se ve como diseño invertido para un estilo más profesional.
+          </p>
+
+          <div class="checklist">
+            <div class="check">Diseño responsive</div>
+            <div class="check">Tipografía y espaciado</div>
+            <div class="check">Botones y etiquetas</div>
+          </div>
+
+          <div class="half__actions">
+            <a class="btn" href="/about.html">Abrir About</a>
+            <a class="btn btn--ghost" href="#cards">Volver a Cards</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <div class="footer__brand">
+            <span class="logo">V</span>
+            <strong>ViteMPA</strong>
+          </div>
+          <p class="muted">
+            Proyecto académico: Vite MPA + LESS con los 5 componentes requeridos.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Secciones</h4>
+          <a href="/">Inicio</a>
+          <a href="/about.html">About</a>
+          <a href="#cards">Cards</a>
+          <a href="#half">Panel</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Detalles</h4>
+          <p class="muted">Framework: Vanilla</p>
+          <p class="muted">Estilos: LESS</p>
+          <p class="muted">Entrega: GitHub + Pages</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Página de 5 componentes</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>  
