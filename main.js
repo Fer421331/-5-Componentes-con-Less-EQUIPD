@@ -1,1 +1,1 @@
-import "./styles/main.less";
+import "./src/styles/main.less";
